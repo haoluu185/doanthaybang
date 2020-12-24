@@ -63,7 +63,6 @@ $sql= 'select * from sanpham';
 			<input id="email" style="width: 600px;height: 40px;border-radius: 7px;border: 1px solid #737373;margin-top: 10px;" type="text" name="email" autocomplete="off" placeholder=" Email tài khoản">
 			<div id="loi-email"></div>
 
-
 			<div class="row" style="width: 600px;">
 				
 			<div class="col-md-8" style="padding:10px 0px;" >
@@ -72,7 +71,7 @@ $sql= 'select * from sanpham';
 				
 			</div>
 			<div class="col-md-4"style="padding:10px 0px;">
-				<input id="sdt" style="width: 199px;height: 40px;border-radius: 7px;border: 1px solid #737373;" type="text" name="sdt"  autocomplete="off" placeholder=" Số điện thoại  ">
+				<input id="sdt" style="width: 199px;height: 40px;border-radius: 7px;border: 1px solid #737373;" type="text" name="sdt" maxlength="10" autocomplete="off" placeholder=" Số điện thoại  ">
 					<div id="loi-sdt"></div>
 				
 
@@ -134,7 +133,7 @@ $sql= 'SELECT MAX(mahd) FROM hoadon WHERE mahd < 10000;';
  ?>
  <input type="hidden" name="madon" value="<?php print_r($val[0]+1) ?>"> <?php }?>
 		
-		<input style="width: 140px;height: 45px;color: #000;font-size: 13px;background: #F7BD33 ;border: none;border-radius: 10px;float: right;margin-right: 105px;" type="submit" name="hoantatdonhang" value="Hoàn tất đơn hàng"> 
+		<input style="width: 140px;height: 45px;color: #000;font-size: 13px;background: #F7BD33 ;border: none;border-radius: 10px;float: right;margin-right: 105px;" type="submit" name="hoantatdonhang" value="Hoàn tất đơn hàng" > 
 
 			</form>
 			
@@ -255,7 +254,7 @@ $sql= 'SELECT MAX(mahd) FROM hoadon WHERE mahd < 10000;';
 
 </script>
 
-<!-- <script>
+<script>
 	$(document).ready(function(){
 	$("#sdt").blur(function(){
 		var u = $(this).val();
@@ -307,7 +306,7 @@ $sql= 'SELECT MAX(mahd) FROM hoadon WHERE mahd < 10000;';
 		}); 
 	});
 });
-</script> -->
+</script>
 <script>
 	$(document).ready(function(){
 	$("#diachi").blur(function(){
@@ -345,5 +344,9 @@ $sql= 'SELECT MAX(mahd) FROM hoadon WHERE mahd < 10000;';
 		}); 
 		}); 
 </script>
+
+
+
+
 </body>
 </html>
